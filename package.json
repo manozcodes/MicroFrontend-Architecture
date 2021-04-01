@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "package:admin": "lerna exec --scope @manozcodes/coreapp -- npm start",
+    "package:module1": "lerna exec --scope @manozcodes/module1 -- npm start"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "dependencies": {
+    "craco": "0.0.3"
+  }
+}
